@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <title>Tecnólogo en Desarrollo de Videojuegos y Entornos Interactivos</title>
+  <title>Technologist in Video Game Development and Interactive Environments</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <style>
     :root{
@@ -53,22 +53,22 @@
       border-bottom: 4px solid var(--green);
       box-shadow: 0 6px 18px rgba(17,24,39,.06);
     }
-    .nav {
-      max-width: 1100px;
-      margin: 0 auto;
-      padding: 0.85rem 1.25rem;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 1rem;
-    }
-
+   .nav {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0.85rem 0.0rem; /* antes 1.25rem */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
     .brand{
-      display:flex;
-      align-items:center;
-      gap:.65rem;
-      min-width: 260px;
-    }
+  display:flex;
+  align-items:center;
+  gap:.65rem;
+  min-width: 260px;
+  margin-left: 0;
+}
     .brand-text{
       display:flex;
       flex-direction:column;
@@ -390,6 +390,7 @@
       gap: 0.5rem;
       color: var(--blue-dark);
     }
+    section h2 span.icon { font-size: 1.05rem; }
     section .subtitle {
       font-size: 0.92rem;
       color: var(--muted);
@@ -404,7 +405,7 @@
     }
     .card {
       border-radius: 12px;
-      border: 1px solid var(--border);
+      border:  1px solid var(--border);
       background: var(--surface);
       padding: 0.9rem 1rem;
       font-size: 0.92rem;
@@ -550,23 +551,30 @@
       .reveal{ opacity:1 !important; transform:none !important; }
       .btn::after{ display:none !important; }
     }
+    .logo-sena{
+  width: 45px;
+  height: auto;
+}
   </style>
 </head>
 <body>
   <header>
     <nav class="nav">
-      <div class="brand">
-        <div class="brand-text">
-          <strong>Tec. Desarrollo de Videojuegos</strong>
-          <span>Servicio Nacional de Aprendizaje (SENA)</span>
-        </div>
-      </div>
+   <div class="brand">
+  <img src="https://th.bing.com/th/id/R.0ef0778de2a6b52ec7654d9f7ce74bfb?rik=wgYlSZzJK%2f8FgQ&riu=http%3a%2f%2f1.bp.blogspot.com%2f-t5a7q_7EnAo%2fTblvssXa-vI%2fAAAAAAAAAAg%2f8kk8aHZDbN4%2fs1600%2flogo_sena.png&ehk=4uixTZwcJFKCl6hTESwnl3yKT2Bdz1vXPtFs0409oDo%3d&risl=&pid=ImgRaw&r=0" 
+       alt="Logo SENA" 
+       class="logo-sena">
+  <div class="brand-text">
+    <strong>Video Game Development (Technologist)</strong>
+    <span>National Learning Service (SENA)</span>
+  </div>
+</div>
 
       <div class="nav-links">
-        <a href="#acerca">Programa</a>
-        <a href="#competencias">Competencias</a>
-        <a href="#perfil-egreso">Perfil egreso</a>
-        <a href="#metodologia">Metodología</a>
+        <a href="#about">Program</a>
+        <a href="#skills">Competencies</a>
+        <a href="#graduate-profile">Graduate profile</a>
+        <a href="#methodology">Methodology</a>
       </div>
     </nav>
   </header>
@@ -576,148 +584,152 @@
       <div class="hero-left">
         <div class="badge">
           <span class="badge-dot"></span>
-          TECNÓLOGO · SENA · VIRTUAL
+          TECHNOLOGIST · SENA · ONLINE
         </div>
+
         <h1>
-          Desarrollo de Videojuegos
-          <span>y Entornos Interactivos</span>
+          Video Game Development
+          <span>& Interactive Environments</span>
         </h1>
+
         <p class="hero-subtitle">
-          Programa tecnólogo orientado a la creación de videojuegos completos: desde la idea y la narrativa, hasta el arte, la programación en Unity y las pruebas de calidad.
+          A technologist program focused on building complete video games: from concept and narrative, to art, Unity development, and quality testing.
         </p>
 
         <div class="hero-tags">
           <span class="hero-tag">Unity 3D</span>
           <span class="hero-tag">C#</span>
           <span class="hero-tag">Blender</span>
-          <span class="hero-tag">Arte 2D/3D</span>
+          <span class="hero-tag">2D/3D Art</span>
           <span class="hero-tag">Game Design</span>
         </div>
 
         <div class="hero-cta">
-          <a href="#acerca" class="btn btn-primary">
-            Ver detalles del programa
+          <a href="#about" class="btn btn-primary">
+            View program details
             <span>↓</span>
           </a>
           <button class="btn btn-secondary" id="btn-scroll-competencias">
-            Explorar competencias
+            Explore competencies
           </button>
         </div>
 
         <div class="hero-meta">
-          <span>⏱ 3120 horas totales</span>
-          <span>🎯 Duración: 21 meses</span>
-          <span>🌐 Modalidad: Virtual</span>
-          <span>🧾 Código: 228108</span>
+          <span>⏱ 3120 total hours</span>
+          <span>🎯 Duration: 21 months</span>
+          <span>🌐 Delivery: Online</span>
+          <span>🧾 Code: 228108</span>
         </div>
       </div>
 
       <aside class="hero-card">
-        <h2>Resumen del perfil</h2>
+        <h2>Profile summary</h2>
         <p>
-          Como tecnólogo podrás diseñar mecánicas de juego, programar la lógica,
-          integrar arte y audio, y probar videojuegos listos para el mercado.
+          As a technologist, you’ll be able to design game mechanics, program game logic,
+          integrate art and audio, and test market-ready video games.
         </p>
 
         <div class="hero-grid">
           <div class="hero-stat">
-            <label>Rol principal</label>
-            <strong>Desarrollador de videojuegos</strong>
+            <label>Main role</label>
+            <strong>Video game developer</strong>
           </div>
           <div class="hero-stat">
-            <label>Áreas clave</label>
-            <strong>Programación, arte, UX, pruebas</strong>
+            <label>Key areas</label>
+            <strong>Programming, art, UX, testing</strong>
           </div>
           <div class="hero-stat">
-            <label>Motor de juego</label>
+            <label>Game engine</label>
             <strong>Unity 3D</strong>
           </div>
           <div class="hero-stat">
-            <label>Herramientas</label>
-            <strong>Blender, C#, TIC</strong>
+            <label>Tools</label>
+            <strong>Blender, C#, ICT</strong>
           </div>
         </div>
 
         <div class="chip-row">
-          <span class="chip">Preproducción</span>
-          <span class="chip">Producción</span>
-          <span class="chip">Posproducción</span>
-          <span class="chip">Pruebas y optimización</span>
+          <span class="chip">Pre-production</span>
+          <span class="chip">Production</span>
+          <span class="chip">Post-production</span>
+          <span class="chip">Testing & optimization</span>
         </div>
       </aside>
     </section>
 
-    <section id="acerca">
-      <h2><span class="icon">🎮</span>Acerca del programa</h2>
+    <section id="about">
+      <h2><span class="icon">🎮</span>About the program</h2>
       <p class="subtitle">
-        El programa cubre todo el ciclo de desarrollo de un videojuego: idea, diseño, arte, programación, pruebas y publicación.
+        The program covers the full game development cycle: idea, design, art, programming, testing, and release.
       </p>
+
       <div class="cards">
         <article class="card">
-          <h3>¿Qué aprenderás?</h3>
+          <h3>What you’ll learn</h3>
           <ul>
-            <li>Historia y tipos de videojuegos para fundamentar tus ideas de diseño.</li>
-            <li>Construcción de guión narrativo, guión técnico y storyboard.</li>
-            <li>Diseño de mecánicas, dinámicas, niveles y estéticas de juego.</li>
-            <li>Conceptos básicos de arte para personajes, objetos y entornos.</li>
-            <li>Modelado, texturizado, rigging y animación 3D con Blender.</li>
-            <li>Integración de recursos en Unity 3D y programación en C#.</li>
-            <li>Pruebas, corrección de errores y optimización del videojuego.</li>
+            <li>Video game history and genres to support your design ideas.</li>
+            <li>Narrative script, technical script, and storyboard creation.</li>
+            <li>Design of mechanics, dynamics, levels, and game aesthetics.</li>
+            <li>Core art concepts for characters, props, and environments.</li>
+            <li>3D modeling, texturing, rigging, and animation with Blender.</li>
+            <li>Asset integration in Unity 3D and C# programming fundamentals.</li>
+            <li>Testing, bug fixing, and performance optimization.</li>
           </ul>
         </article>
 
         <article class="card">
-          <h3>Perfil de ingreso recomendado</h3>
+          <h3>Recommended entry profile</h3>
           <ul>
-            <li>Educación media completa (grado 11) y gusto por la tecnología.</li>
-            <li>Capacidad de automotivación, autocontrol y autogestión.</li>
-            <li>Actitud positiva frente al entorno y a la interacción social.</li>
-            <li>Interés por resolver problemas y crear soluciones interactivas.</li>
+            <li>High school completed and interest in technology.</li>
+            <li>Self-motivation, self-control, and self-management skills.</li>
+            <li>Positive attitude toward collaboration and social interaction.</li>
+            <li>Interest in solving problems and building interactive solutions.</li>
           </ul>
           <div class="pill-row">
-            <span class="pill">Explorador de ideas</span>
-            <span class="pill">Jugador curioso</span>
-            <span class="pill">Aprendiz autónomo</span>
+            <span class="pill">Idea explorer</span>
+            <span class="pill">Curious gamer</span>
+            <span class="pill">Self-directed learner</span>
           </div>
         </article>
 
         <article class="card">
-          <h3>Resultados del proceso</h3>
+          <h3>Expected outcomes</h3>
           <ul>
-            <li>Documentación del código y del diseño del videojuego.</li>
-            <li>Código fuente de la lógica e interactividad del juego.</li>
-            <li>Prototipos jugables para pruebas y validación.</li>
-            <li>Videojuego completo con informes de pruebas realizadas.</li>
+            <li>Well-documented code and game design documentation.</li>
+            <li>Source code for gameplay logic and interactivity.</li>
+            <li>Playable prototypes for testing and validation.</li>
+            <li>Final game build with testing reports.</li>
           </ul>
           <div class="pill-row">
-            <span class="pill">Prototipos jugables</span>
-            <span class="pill">Documentación técnica</span>
-            <span class="pill">Informe de pruebas</span>
+            <span class="pill">Playable prototypes</span>
+            <span class="pill">Technical documentation</span>
+            <span class="pill">Testing report</span>
           </div>
         </article>
       </div>
     </section>
 
-    <section id="competencias">
-      <h2><span class="icon">🧩</span>Competencias del programa</h2>
+    <section id="skills">
+      <h2><span class="icon">🧩</span>Program competencies</h2>
       <p class="subtitle">
-        Competencias que desarrollarás durante la formación como tecnólogo en Desarrollo de Videojuegos y Entornos Interactivos.
+        Competencies you will develop throughout the technologist program.
       </p>
+
       <div class="accordion" id="accordion-competencias">
         <div class="accordion-item">
           <button class="accordion-header">
-            <span>Fundamentos generales y habilidades transversales</span>
+            <span>General foundations & transferable skills</span>
             <span class="chevron">▶</span>
           </button>
           <div class="accordion-body">
             <div class="accordion-body-inner">
               <ul>
-                <li>Aplicar conocimientos de ciencias naturales en contextos productivos y sociales.</li>
-                <li>Aplicar prácticas de protección ambiental, seguridad y salud en el trabajo.</li>
-                <li>Desarrollar procesos de comunicación eficaces y efectivos.</li>
-                <li>Ejercer derechos fundamentales del trabajo según la legislación vigente.</li>
-                <li>Interactuar en contextos productivos y sociales con principios éticos y cultura de paz.</li>
-                <li>Generar hábitos saludables de vida mediante programas de actividad física.</li>
+                <li>Apply natural science knowledge in productive and social contexts.</li>
+                <li>Apply environmental protection, workplace safety, and health practices.</li>
+                <li>Develop effective and efficient communication processes.</li>
+                <li>Exercise fundamental labor rights according to current regulations.</li>
+                <li>Interact ethically in productive and social environments and promote a culture of peace.</li>
+                <li>Build healthy habits through physical activity programs.</li>
               </ul>
             </div>
           </div>
@@ -725,16 +737,16 @@
 
         <div class="accordion-item">
           <button class="accordion-header">
-            <span>Emprendimiento, inglés y habilidades cuantitativas</span>
+            <span>Entrepreneurship, English & quantitative skills</span>
             <span class="chevron">▶</span>
           </button>
           <div class="accordion-body">
             <div class="accordion-body-inner">
               <ul>
-                <li>Gestionar procesos propios de la cultura emprendedora y empresarial.</li>
-                <li>Interactuar en lengua inglesa de forma oral y escrita según el marco europeo.</li>
-                <li>Orientar investigación formativa según referentes técnicos.</li>
-                <li>Razonar cuantitativamente en contextos laborales y sociales.</li>
+                <li>Manage entrepreneurship and business culture processes.</li>
+                <li>Interact in English orally and in writing according to the European framework.</li>
+                <li>Guide formative research based on technical references.</li>
+                <li>Reason quantitatively in work and social contexts.</li>
               </ul>
             </div>
           </div>
@@ -742,17 +754,17 @@
 
         <div class="accordion-item">
           <button class="accordion-header">
-            <span>Competencias específicas en videojuegos</span>
+            <span>Game development competencies</span>
             <span class="chevron">▶</span>
           </button>
           <div class="accordion-body">
             <div class="accordion-body-inner">
               <ul>
-                <li>Planear el videojuego según procedimientos y requisitos técnicos.</li>
-                <li>Implementar componentes de arte y audio con herramientas de desarrollo.</li>
-                <li>Producir la lógica del videojuego de acuerdo con el diseño y técnicas de desarrollo.</li>
-                <li>Probar el videojuego con métodos y herramientas de testeo.</li>
-                <li>Aplicar fundamentos de programación orientada a objetos en el motor de juego.</li>
+                <li>Plan the video game according to procedures and technical requirements.</li>
+                <li>Implement art and audio components using development tools.</li>
+                <li>Build game logic based on design and development techniques.</li>
+                <li>Test the game using testing methods and tools.</li>
+                <li>Apply object-oriented programming fundamentals within the game engine.</li>
               </ul>
             </div>
           </div>
@@ -760,14 +772,14 @@
 
         <div class="accordion-item">
           <button class="accordion-header">
-            <span>Etapa práctica e integración al sector</span>
+            <span>Practical stage & industry integration</span>
             <span class="chevron">▶</span>
           </button>
           <div class="accordion-body">
             <div class="accordion-body-inner">
               <ul>
-                <li>Aplicar los resultados de aprendizaje en entornos reales de práctica.</li>
-                <li>Integrarse a equipos de trabajo respetando roles y estándares del sector.</li>
+                <li>Apply learning outcomes in real practice environments.</li>
+                <li>Integrate into teams while respecting roles and industry standards.</li>
               </ul>
             </div>
           </div>
@@ -775,60 +787,65 @@
       </div>
     </section>
 
-    <section id="perfil-egreso">
-      <h2><span class="icon">🚀</span>Perfil de egreso</h2>
+    <section id="graduate-profile">
+      <h2><span class="icon">🚀</span>Graduate profile</h2>
       <p class="subtitle">
-        Qué podrás hacer al finalizar el programa como tecnólogo en Desarrollo de Videojuegos y Entornos Interactivos.
+        What you’ll be able to do after completing the program.
       </p>
+
       <div class="cards">
         <article class="card">
-          <h3>Rol profesional</h3>
+          <h3>Professional role</h3>
           <ul>
-            <li>Generar el código que define el comportamiento de personajes, objetos y UI.</li>
-            <li>Controlar la interacción entre el jugador y el videojuego.</li>
-            <li>Diseñar experiencias de usuario, usabilidad y narrativa coherentes.</li>
+            <li>Write code that defines the behavior of characters, objects, and UI.</li>
+            <li>Control gameplay interaction between the player and the video game.</li>
+            <li>Design user experiences, usability, and coherent narrative flows.</li>
           </ul>
         </article>
+
         <article class="card">
-          <h3>Integración de recursos</h3>
+          <h3>Asset integration</h3>
           <ul>
-            <li>Incorporar recursos audiovisuales en el proceso de producción.</li>
-            <li>Organizar el flujo de trabajo para asegurar el proyecto en todas sus fases.</li>
-            <li>Colaborar con artistas, diseñadores y demás perfiles del equipo.</li>
+            <li>Incorporate audiovisual assets into the production process.</li>
+            <li>Organize workflow to ensure the project across all phases.</li>
+            <li>Collaborate with artists, designers, and other team roles.</li>
           </ul>
         </article>
+
         <article class="card">
-          <h3>Calidad y pruebas</h3>
+          <h3>Quality & testing</h3>
           <ul>
-            <li>Realizar pruebas para asegurar estándares de calidad del producto.</li>
-            <li>Asegurar que el videojuego responda a necesidades del mercado.</li>
-            <li>Promover el trabajo en equipo y el respeto en el entorno profesional.</li>
+            <li>Perform tests to meet quality standards.</li>
+            <li>Ensure the game responds to market needs.</li>
+            <li>Promote teamwork and respect in professional settings.</li>
           </ul>
         </article>
       </div>
     </section>
 
-    <section id="metodologia">
-      <h2><span class="icon">📚</span>Metodología de formación</h2>
+    <section id="methodology">
+      <h2><span class="icon">📚</span>Training methodology</h2>
       <p class="subtitle">
-        La estrategia metodológica se centra en la autonomía, el aprendizaje por proyectos y el uso intensivo de TIC.
+        The methodology emphasizes autonomy, project-based learning, and strong use of ICT tools.
       </p>
+
       <div class="cards">
         <article class="card">
-          <h3>Enfoque</h3>
+          <h3>Approach</h3>
           <ul>
-            <li>Formación por competencias con aprendizaje basado en proyectos.</li>
-            <li>Uso de técnicas activas para resolver problemas reales y simulados.</li>
-            <li>Ambientes virtuales que recrean el contexto productivo.</li>
+            <li>Competency-based training with project-based learning.</li>
+            <li>Active techniques to solve real and simulated problems.</li>
+            <li>Virtual environments that mirror productive contexts.</li>
           </ul>
         </article>
+
         <article class="card">
-          <h3>Fuentes de aprendizaje</h3>
+          <h3>Learning sources</h3>
           <ul>
-            <li>Instructor-tutor como guía del proceso formativo.</li>
-            <li>Entorno y contexto productivo como laboratorio de experiencias.</li>
-            <li>Tecnologías de la información y la comunicación como soporte.</li>
-            <li>Trabajo colaborativo como eje para construir conocimiento.</li>
+            <li>Instructor/tutor as a guide in the learning process.</li>
+            <li>Environment and productive context as a lab for experiences.</li>
+            <li>Information and communication technologies as a support layer.</li>
+            <li>Collaborative work as a core knowledge-building pillar.</li>
           </ul>
         </article>
       </div>
@@ -836,12 +853,12 @@
   </main>
 
   <footer>
-    <span>Contenido basado en el programa “Desarrollo de Videojuegos y Entornos Interactivos” del SENA.</span>
+    <span>Content based on the SENA program “Video Game Development and Interactive Environments”.</span>
   </footer>
 
   <script>
     document.getElementById("btn-scroll-competencias")?.addEventListener("click", () => {
-      document.getElementById("competencias")?.scrollIntoView({ behavior: "smooth" });
+      document.getElementById("skills")?.scrollIntoView({ behavior: "smooth" });
     });
 
     document.querySelectorAll(".nav-links a").forEach((link) => {
@@ -888,7 +905,6 @@
       }
     }
 
-    // Scroll reveal
     const revealTargets = [
       ...document.querySelectorAll("section"),
       document.querySelector(".hero-left"),
